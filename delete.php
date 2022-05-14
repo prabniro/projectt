@@ -10,7 +10,7 @@ if(!$con){
 $sql = "DELETE from products where id=$id";
 $result = mysqli_query($con, $sql);
 if($result){
-	//echo "data deleted successfully";
+	echo "data deleted successfully";
 	header("Location:products.php");
 }else{
 echo "error in delete " . mysqli_error($con);
